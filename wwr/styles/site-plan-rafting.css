@@ -16,15 +16,15 @@ Fonts are separated by a & */
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #0E7C7B;  /* headlines on a white background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #0E7C7B; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #0E7C7B  ;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #4B1D3F;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #0E7C7B;
 }
 
 
@@ -82,6 +82,7 @@ p {
   height: 3em;
 }
 .primary {
+  color: #ffff;
   background-color: var(--primary-color);
 }
 .secondary {
@@ -91,6 +92,7 @@ p {
   background-color: var(--accent1-color);
 }
 .accent2{
+  color: #ffff;
   background-color: var(--accent2-color);
 }
 p.colored {
