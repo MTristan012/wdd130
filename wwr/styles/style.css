@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lemon&family=Lobster&display=swap');
+
+/*ROOT*/
+
+:root {
+  --primary-color: #0e7c7b;
+  --secondary-color: #17bebb;
+  --accent1-color: #d4f4dd;
+  --accent2-color: #d62246;
+
+  --heading-font: "Grape Nuts";
+  --paragraph-font: Lemon, Lobster, sans-serif;
+
+  --headline-color-on-white: #0e7c7b;
+  --headline-color-on-color: #ffffff;
+  --paragraph-color-on-white: #0e7c7b;
+  --paragraph-color-on-color: #ffffff;
+  --paragraph-background-color: #0e7c7b;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #4b1d3f;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #0e7c7b;
+}
+
+/*ID's*/
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+  color: #0e7c7b;
+}
+
+#background {
+  height: 725px;
+  background-color: #dac2a4;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+/*Class*/
+
+.book,
+.join {
+  text-decoration: none;
+  background-color: #17bebb;
+}
+
+.book:hover,
+.join:hover {
+  background-color: #d62246;
+  color: #ffff;
+}
+
+.msg {
+  background-color: #0e7c7b;
+  color: #ffff;
+}
+
+.icon,
+.logo {
+  width: 80px;
+}
+
+.home-title {
+  color: #4b1d3f;
+}
+
+.button-box {
+  text-align: center;
+}
+
+/*Elements*/
+
+body {
+  background-color: #fcfbfb;
+}
+
+header {
+  background-color: #4b1d3f;
+}
+
+nav a {
+  text-align: center;
+  color: #fcfbfb;
+  text-decoration: none;
+}
+
+main section {
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #0e7c7b;
+  color: #ffff;
+}
+
+footer {
+  background-color: #0e7c7b;
+  color: #fff;
+}
+
+footer a {
+  color: #fcfbfb;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
