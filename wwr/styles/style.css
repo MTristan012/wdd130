@@ -166,8 +166,8 @@ footer .social img{
 }
 
 .card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
+  opacity: .6;
+  transform: scale(1.1);
 }
 
 .mountains {
@@ -190,6 +190,90 @@ footer .social img{
 .rapids-card {
   grid-column: 8/10;
   grid-row: 2/3;
+}
+
+.main {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+}
+
+.utah-river-text {
+  background-color: #f4bf6f;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ 
+.idaho-river-text {
+  background-color: #cab2a2;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.arizona-river-text {
+  background-color: #7eabb0;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.utah-river-img {
+  background-color: #f4bf6f;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  transition: transform .5s;
+}
+ 
+.idaho-river-img {
+  background-color: #cab2a2;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  transition: transform .5s;
+}
+
+.arizona-river-img {
+  background-color: #7eabb0;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  transition: transform .5s;
+}
+
+.utah-river-img:hover, .idaho-river-img:hover, .arizona-river-img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.riverPhoto {
+  width:100%;
+  object-fit: cover;
+}
+
+.hero-text{
+  color: #ffffff;
+  background: rgba(0, 128, 0, 0.7);
+}
+
+.button{
+  background-color: #51688c;
+  padding: 1.5rem;
+  border-radius: .5em;
+  color: #ffffff;
 }
 
 /*ID's*/
@@ -287,5 +371,51 @@ footer .social img{
     }
     footer {
         margin-top: 25px;
+    }
+    .main {
+      margin-top: 5rem;
+      display:grid;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .utah-river-text {
+      background-color: #f4bf6f;
+      grid-row: 4/5;
+      grid-column: 1/3;
+    }
+    
+    .idaho-river-text {
+      background-color: #cab2a2;
+      grid-row: 2/3;
+      grid-column: 1/3;
+    }
+
+    .arizona-river-text {
+      background-color: #7eabb0;
+      grid-row: 6/7;
+      grid-column: 1/3;
+    }
+
+    .utah-river-img {
+      background-color: #f4bf6f;
+      grid-row: 3/4;
+      grid-column: 1/3;
+    }
+    
+    .idaho-river-img {
+      background-color: #cab2a2;
+      grid-row: 1/2;
+      grid-column: 1/3;
+    }
+
+    .arizona-river-img {
+      background-color: #7eabb0;
+      grid-row: 5/6;
+      grid-column: 1/3;
+    }
+    .hero-text{
+      color: #000;
+      padding: 0 2rem;
+      margin: 0 2rem;
     }
 }
