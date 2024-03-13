@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lemon&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lemon&family=Lobster&display=swap");
 
 /*ROOT*/
 
@@ -54,7 +54,7 @@ main section {
 }
 
 main section img {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav {
@@ -90,7 +90,7 @@ footer p a:hover {
   text-decoration: underline;
 }
 
-footer .social img{
+footer .social img {
   padding-top: 15px;
 }
 
@@ -150,23 +150,25 @@ footer .social img{
 
 .msg p {
   font-family: var(--paragraph-font);
-  font-size: .8em;
+  font-size: 0.8em;
   padding-bottom: 15px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
   margin: 200px 0;
 }
 
-.card-img{
+.card-img {
   border: 10px solid #d9c2a3;
   width: 100%;
-  transition: transform .5s;
+  transition: transform 0.5s;
   box-shadow: 5px 5px 10px #6f7364;
 }
 
 .card-img:hover {
-  opacity: .6;
+  opacity: 0.6;
   transform: scale(1.1);
 }
 
@@ -177,7 +179,7 @@ footer .social img{
   box-shadow: 5px 5px 10px #6f7364;
 }
 
-.rivers-card{
+.rivers-card {
   grid-column: 2/4;
   grid-row: 2/3;
 }
@@ -209,7 +211,7 @@ footer .social img{
   flex-direction: column;
   justify-content: space-around;
 }
- 
+
 .idaho-river-text {
   background-color: #cab2a2;
   grid-column: 2/3;
@@ -235,15 +237,15 @@ footer .social img{
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
- 
+
 .idaho-river-img {
   background-color: #cab2a2;
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .arizona-river-img {
@@ -251,28 +253,30 @@ footer .social img{
   grid-column: 1/2;
   grid-row: 3/4;
   display: flex;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
-.utah-river-img:hover, .idaho-river-img:hover, .arizona-river-img:hover {
+.utah-river-img:hover,
+.idaho-river-img:hover,
+.arizona-river-img:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 10px #6f7364;
 }
 
 .riverPhoto {
-  width:100%;
+  width: 100%;
   object-fit: cover;
 }
 
-.hero-text{
+.hero-text {
   color: #ffffff;
   background: rgba(0, 128, 0, 0.7);
 }
 
-.button{
+.button {
   background-color: #51688c;
   padding: 1.5rem;
-  border-radius: .5em;
+  border-radius: 0.5em;
   color: #ffffff;
 }
 
@@ -310,7 +314,7 @@ footer .social img{
 #hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: -100px
+  margin-top: -100px;
 }
 
 #hero-box {
@@ -319,103 +323,187 @@ footer .social img{
   z-index: -1;
 }
 
-#logo_link{
+#logo_link {
   padding-top: 5px;
   justify-self: center;
   align-self: center;
 }
 
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+            By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+            between the labels and their text fields */
+  margin-left: 0.5em;
+}
+
 /*Querys*/
 
 @media screen and (max-width: 900px) {
-    header{
-      background-color: #4b1d3f;
-    }
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-    .home-title {
-        font-size: 50px;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
-    .main {
-      margin-top: 5rem;
-      display:grid;
-      grid-template-rows: repeat(6, 1fr);
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .utah-river-text {
-      background-color: #f4bf6f;
-      grid-row: 4/5;
-      grid-column: 1/3;
-    }
-    
-    .idaho-river-text {
-      background-color: #cab2a2;
-      grid-row: 2/3;
-      grid-column: 1/3;
-    }
+  header {
+    background-color: #4b1d3f;
+  }
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
+  }
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  #hero {
+    margin-top: 0;
+  }
+  #hero-msg {
+    margin-top: 0;
+  }
+  #hero-msg h4 {
+    display: none;
+  }
+  #hero-msg h1 {
+    color: #6f7364;
+  }
+  .home-title {
+    font-size: 50px;
+  }
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+  #background {
+    display: none;
+  }
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 25px;
+  }
+  .main {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .utah-river-text {
+    background-color: #f4bf6f;
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
 
-    .arizona-river-text {
-      background-color: #7eabb0;
-      grid-row: 6/7;
-      grid-column: 1/3;
-    }
+  .idaho-river-text {
+    background-color: #cab2a2;
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
 
-    .utah-river-img {
-      background-color: #f4bf6f;
-      grid-row: 3/4;
-      grid-column: 1/3;
-    }
-    
-    .idaho-river-img {
-      background-color: #cab2a2;
-      grid-row: 1/2;
-      grid-column: 1/3;
-    }
+  .arizona-river-text {
+    background-color: #7eabb0;
+    grid-row: 6/7;
+    grid-column: 1/3;
+  }
 
-    .arizona-river-img {
-      background-color: #7eabb0;
-      grid-row: 5/6;
-      grid-column: 1/3;
-    }
-    .hero-text{
-      color: #000;
-      padding: 0 2rem;
-      margin: 0 2rem;
-    }
+  .utah-river-img {
+    background-color: #f4bf6f;
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+
+  .idaho-river-img {
+    background-color: #cab2a2;
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+
+  .arizona-river-img {
+    background-color: #7eabb0;
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+  .hero-text {
+    color: #000;
+    padding: 0 2rem;
+    margin: 0 2rem;
+  }
 }
