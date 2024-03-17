@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&family=Teko:wght@300..700&display=swap');
+
+/*ROOT*/
+
+:root {
+  --primary-color: #219EBC;
+  --secondary-color: #FFB703;
+  --accent1-color: #8ECAE6;
+  --accent2-color: #FFFFFF;
+
+  --heading-font: "Kode Mono";
+  --paragraph-font: Barlow, Teko, sans-serif;
+
+  --headline-color-on-white: #219EBC;
+  --headline-color-on-color: #ffffff;
+  --paragraph-color-on-white: #219EBC;
+  --paragraph-color-on-color: #ffffff;
+  --paragraph-background-color: #219EBC;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #8ECAE6;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #219EBC;
+}
+
+/*Elements*/
+
+body {
+  background-color: #fcfbfb;
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: #023047;
+}
+
+nav a {
+  text-align: center;
+  color: #fcfbfb;
+  text-decoration: none;
+  padding: 35px;
+}
+
+main section {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a:hover {
+  background-color: #219EBC;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #023047;
+  color: #fff;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer a {
+  color: #fcfbfb;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/*Class*/
+
+.logo {
+  width: 5em;
+  margin-top: .5em;
+}
+
+.social {
+    width: 3rem;
+    margin: auto 7px;
+}
+
+/*ID*/
+
+#logo_link {
+  justify-self: center;
+  align-self: center;
+}
+
+#content {
+    width:100%;
+    margin: 0 auto;
+    padding: 5em;
+}
+
+/*Querys*/
+
+@media screen and (max-width: 900px) {
+    nav,
+  footer {
+    flex-direction: column;
+  }
+}
