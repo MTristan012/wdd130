@@ -1,28 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&family=Teko:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&family=Teko:wght@300..700&display=swap");
 
 /*ROOT*/
 
 :root {
-  --primary-color: #219EBC;
-  --secondary-color: #FFB703;
-  --accent1-color: #8ECAE6;
-  --accent2-color: #FFFFFF;
+  --primary-color: #219ebc;
+  --secondary-color: #ffb703;
+  --accent1-color: #8ecae6;
+  --accent2-color: #ffffff;
 
   --heading-font: "Kode Mono";
   --paragraph-font: Barlow, Teko, sans-serif;
 
-  --headline-color-on-white: #219EBC;
+  --headline-color-on-white: #219ebc;
   --headline-color-on-color: #ffffff;
-  --paragraph-color-on-white: #219EBC;
+  --paragraph-color-on-white: #219ebc;
   --paragraph-color-on-color: #ffffff;
-  --paragraph-background-color: #219EBC;
+  --paragraph-background-color: #219ebc;
   --nav-link-color: #ffffff;
-  --nav-background-color: #8ECAE6;
+  --nav-background-color: #8ecae6;
   --nav-hover-link-color: #ffffff;
-  --nav-hover-background-color: #219EBC;
+  --nav-hover-background-color: #219ebc;
 }
 
 /*Elements*/
+
+h1 {
+  font-family: var(--heading-font);
+}
 
 body {
   background-color: #fcfbfb;
@@ -30,6 +34,7 @@ body {
   font-size: 22px;
   margin: 0;
   padding: 0;
+  background-color: #d9d9d9;
 }
 
 header {
@@ -55,20 +60,18 @@ nav {
 }
 
 nav a:hover {
-  background-color: #219EBC;
+  background-color: #219ebc;
   color: #ffffff;
 }
 
 footer {
   background-color: #023047;
   color: #fff;
-  padding: 25px 50px;
-  margin-top: 200px;
+  padding: 2em 5em;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 
 footer a {
   color: #fcfbfb;
@@ -87,12 +90,105 @@ footer p a:hover {
 
 .logo {
   width: 5em;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .social {
-    width: 3rem;
-    margin: auto 7px;
+  width: 3rem;
+  margin: auto 7px;
+}
+
+.main-full-stack {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title-full-stack {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title-full-stack h3 {
+  padding: 1em;
+  background-color: #219ebc;
+  grid-column: 1/2;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin:0 auto;
+  height: 90vh;
+}
+
+.project-card-text {
+  width:100%;
+  height: auto;
+}
+
+.project-card-txt p {
+  background-color: #219ebc;
+  color: #fff;
+  padding: 0.2em;
+}
+
+.project-card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.miniCard {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 3%;
+}
+
+.secondary {
+  display: none;
+}
+
+.project-card a{
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.projects-cards .project-card:nth-of-type(1) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.projects-cards .project-card:nth-of-type(2) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.projects-cards .project-card:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+}
+
+.projects-cards .project-card:nth-of-type(1) .miniCard {
+  border: solid 0.5em #ffb703;
+  vertical-align: top;
+  height: 70vh;
+}
+
+.projects-cards .project-card:nth-of-type(2) .miniCard {
+  border: solid 0.5em #ffb703;
+  vertical-align: bottom;
+  height: 70vh;
+}
+
+.projects-cards .project-card:nth-of-type(3) .miniCard {
+  border: solid 0.5em #ffb703;
+  vertical-align: middle;
 }
 
 /*ID*/
@@ -103,16 +199,156 @@ footer p a:hover {
 }
 
 #content {
-    width:100%;
-    margin: 0 auto;
-    padding: 5em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5em;
+}
+
+#base{
+  width:100%;
+  height: 90vh;
+  background-image: url("../images/cBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center
+}
+
+#hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#projects {
+  margin-bottom: 2em;
+}
+
+#hero div {
+  background-color: #219ebc;
+  margin: auto 1em;
+  padding: 0 1em;
+  color: #ffffff;
+}
+
+#base div {
+  background-color: #593c35;
+  color: #ffff;
+  padding: 1em;
+  margin: 1em;
+}
+
+#projects .text {
+  background-color: #219ebc;
+  margin: auto 1em;
+  padding: 0 1em;
+  color: #ffffff;
+}
+
+#projects .projects-card{
+  padding: 50px;
+}
+
+/* Carousel */
+
+.carousel-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 calc(100% / 3);
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 3%;
+  background-color: #219ebc;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 3% 3% 0 0;
+}
+
+.card-img img:hover {
+}
+
+.card-title{
+  padding:.2em;
 }
 
 /*Querys*/
 
-@media screen and (max-width: 900px) {
-    nav,
+@media screen and (max-width: 960px) {
+  nav,
   footer {
     flex-direction: column;
+  }
+
+  .title-full-stack h3 {
+    padding: 1em;
+    background-color: #219ebc;
+    grid-column: 1/3;
+  }
+
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 0.5em;
+  }
+
+  .carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card {
+    flex: 0 0 calc(96.5% / 3);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 0 0 3% 3%;
+  }
+
+  .projects-cards .project-card:nth-of-type(1) .miniCard {
+    height: 100%;
+  }
+
+.projects-cards .project-card:nth-of-type(2) .miniCard {
+  height: 100%;
+}
+
+  .principal {
+    display: none;
+  }
+
+  .secondary {
+    display: block;
+  }
+
+  .projects-cards{
+    display: block;
+  }
+
+  .projects-cards .project-card{
+    margin: 1em auto;
+  }
+
+  .projects-cards {
+    height: 100%;
   }
 }
