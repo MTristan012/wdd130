@@ -191,6 +191,10 @@ footer p a:hover {
   vertical-align: middle;
 }
 
+.main-full-stack {
+  padding-bottom: 1em;
+}
+
 /*ID*/
 
 #logo_link {
@@ -251,42 +255,6 @@ footer p a:hover {
 
 #projects .projects-card{
   padding: 50px;
-}
-
-/* Carousel */
-
-.carousel-container {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.card {
-  flex: 0 0 calc(100% / 3);
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 3%;
-  background-color: #219ebc;
-}
-
-.card-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 3% 3% 0 0;
-}
-
-.card-img img:hover {
-}
-
-.card-title{
-  padding:.2em;
 }
 
 /*Querys*/
