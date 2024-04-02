@@ -1,10 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
     <title>PORTFOLIO | Contact Me</title>
 </head>
+
 <body>
     <div class="content">
         <header>
@@ -18,52 +23,105 @@
                 <a href="contactme.html">Contact Me</a>
             </nav>
         </header>
-        <main>
-            <section>
-                <img src="./images/me.jpg" alt="me">
+        <main class="about-main">
+            <section class="about-me">
+                <img src="./images/me.jpg" alt="me" class="me">
             </section>
-            <section>
-                <div>
+            <section class="about-info">
+                <div class="about-info-div">
                     <h3>
-                        In this section, you will find my professional contact details, such as my LinkedIn, email, and GitHub profiles.
+                        In this section, you will find my professional contact details, such as my LinkedIn, email, and
+                        GitHub profiles.
                     </h3>
                 </div>
-                <div>
-                    <div>
-                        <span>
+                <div class="about-info-links">
+                    <div class="about-info-box">
+                        <div class="box-icon">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
                                     d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                             </svg>
-                        </span>
-                        <span>
-                            <a href="https://www.linkedin.com/in/mtristanpdlc180195/">LinkedIn</a>
-                        </span>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                If you want to know where I am working, or you want me to collaborate with you, look for me at 
+                                <span>
+                                    <a href="https://www.linkedin.com/in/mtristanpdlc180195/" target="_blank" rel="noopener">LinkedIn</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <span>
+                    <div class="about-info-box">
+                        <div class="box-icon">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
                                     d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                             </svg>
-                        </span>
-                        <span>
-                            <a href="mailto:mtpc.amilcar@outlook.com">Email</a>
-                        </span>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                Do you want to discuss something directly with me? contact me by
+                                <span>
+                                    <a href="mailto:mtpc.amilcar@outlook.com" target="_blank" rel="noopener">Email</a>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <span>
+                    <div class="about-info-box">
+                        <div class="box-icon">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
                                     d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                             </svg>
-                        </span>
-                        <span>
-                            <a href="https://github.com/MTristan012">GitHub</a>
-                        </span>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                Would you like to know what I'm working on? I invite you to review my
+                                <span>
+                                    <a href="https://github.com/MTristan012" target="_blank" rel="noopener">GitHub</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-info-box">
+                        <div class="box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="176.28" viewBox="0 0 271.16687 176.27562" width="271.17">
+                                <script xmlns="" />
+                                <g transform="matrix(.625 0 0 .625 .53669 .77519)">
+                                    <path fill="#003DA5"
+                                        d="m216 0.432c-118.92 0-215.33 62.423-215.33 139.42 0 77 96.41 139.42 215.33 139.42 118.93 0 215.34-62.42 215.34-139.42 0-76.995-96.41-139.42-215.34-139.42z" />
+                                    <path fill="#fff"
+                                        d="m266.05 60.807c5.171 0.68 22.936 4.136 28.906 6.493l-59.706 72.185-67.7-78.825c5.391-1.393 20.807-2.958 27.762-3.351-0.564-5.712-3.657-34.475-3.657-34.475-37.22 1.271-98.857 17.31-136.28 50.23 2.658 3.187 16.231 20.71 20.833 26.153 5.764-5.54 18.721-14.324 23.004-16.289l83.554 94.757s-0.145 40.574-0.073 42.576c-6.413-0.563-24.361-3.182-28.771-4.563-0.837 5.135-5.673 28.635-6.512 32.707 50.911 12.187 106.3 8.433 141.92-1.102-3.604-15.809-6.94-25.655-8.143-32.011-6.973 1.559-26.421 4.605-30.227 4.888l0.053-42.46 79.326-96.662s16.601 8.897 25.362 17.699c4.13-5.155 13.011-17.858 19.446-26.126-29.65-23.894-66.48-39.163-105.07-45.626-0.556 8.474-3.342 27.958-4.023 33.8z" />
+                                </g>
+                                <script xmlns="" />
+                            </svg>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                Do you want to learn to do what I do and will do? more information here
+                                <span>
+                                    <a href="https://www.byupathway.edu/" target="_blank" rel="noopener">BYU</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-info-box">
+                        <div class="box-icon">
+                            <img src="https://www.fundaciondevalores.org/wp-content/uploads/2023/04/LOGO-FUNVAL-NUEVO1_Mesa-de-trabajo-1.png" alt="funval" class="funval">
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                You speak Spanish, you want to learn to program, you are from Latin America and you are looking for a light on your
+                                path, 
+                                <span>
+                                    <a href="https://mx.laiglesiadejesucristo.org/bienestar-y-autosuficiencia/recursos-de-educacion/funval" target="_blank" rel="noopener">FUNVAL</a>
+                                </span>
+                                 is for you
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -72,7 +130,8 @@
             <p>PORTFOLIO &copy; 2024 - MTristan Perea</p>
             <p><a href="site-plan.html">Site Plan</a></p>
             <p><a href="contactme.html">Contact Me</a></p>
-            <a class="social" href="https://github.com/MTristan012" target="_blank" rel="noopener" title="Personal GitHub">
+            <a class="social" href="https://github.com/MTristan012" target="_blank" rel="noopener"
+                title="Personal GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path fill="#ffffff"
@@ -87,7 +146,8 @@
                         d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
                 </svg>
             </a>
-            <a class="social" href="https://www.linkedin.com/in/mtristanpdlc180195/" target="_blank" rel="noopener" title="linkedin">
+            <a class="social" href="https://www.linkedin.com/in/mtristanpdlc180195/" target="_blank" rel="noopener"
+                title="linkedin">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path fill="#ffffff"
@@ -97,4 +157,5 @@
         </footer>
     </div>
 </body>
+
 </html>
